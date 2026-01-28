@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(r'air_brum_bris.csv')
+df = pd.read_csv(r'data\air_brum_bris.csv')
 
 df['date'] = pd.to_datetime(df['date'])
 df = df.set_index('date')
@@ -10,7 +10,9 @@ df[['nox', 'no2', 'no']] = df[['nox', 'no2', 'no']].interpolate(method='time', l
 
 print(df[['nox', 'no2', 'no']].isna().sum())
 
-#df.to_csv('air_brum_bris_cleaned', index=False)
+print(df.columns)
+
+df.to_csv('air_brum_bris_cleaned_dates', index=True)
 
 #Big graphs, needs some filters
 
