@@ -1,72 +1,85 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Project Title
+Air Quality Comparator Project
 
-## Template Instructions
+---
 
-Welcome,
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Dataset](#dataset)
+- [Problem Statement](#problem-statement)
+- [Methodology](#methodology)
+- [Analysis & Results](#analysis--results)
+- [Visualizations](#visualizations)
+- [Conclusions](#conclusions)
+- [Future Work](#future-work)
+- [Setup & Run](#setup--run)
+- [Team / Contributors](#team--contributors)
 
-This is the Code Institute student template for the Data Analytics capstone project. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
+---
 
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
+## Project Overview
+Brief summary of the project, its purpose, and the main insights.
 
-## How to use this repo
+---
 
-1. Use this template to create your GitHub project repo. Click the **Use this template** button, then click **Create a new repository**.
+## Datasets
+- 2 sources of data were obtained. 1 kaggle dataset as described below
+- Satellite data was 
+- Source: [Link to dataset](https://www.kaggle.com/datasets/airqualityanthony/uk-defra-aurn-air-quality-data-2015-2023)
+- Description: .csv, 1.86GB, contains ground measurement data for UK air pollution between 2015 and 2023. It includes several pollutants including Carbon Monoxide, Nitrogen Oxides, Nitrogen Dioxide, Nitric Oxide, Ozone, and Sulphur Dioxide.
 
-1. Copy the URL of your repository to your clipboard.
+- Licensing is stated as other, with no further information in the description.
 
-1. In VS Code, select **File** -> **Open Folder**.
+---
 
-1. Select your `vscode-projects` folder, then click the **Select Folder** button on Windows, or the **Open** button on Mac.
+## Problem Statement
+- We are attempting to discover whether open source satellite data is sufficiently correlated with collected ground data for air pollution. If this is the case, we can infer what the ground readings would be from satellite data, reducing the need for ground instrument readings, thus reducing the associated cost.
 
-1. From the top menu in VS Code, select **Terminal** > **New Terminal** to open the terminal.
 
-1. In the terminal, type `git clone` followed by the URL of your GitHub repository. Then hit **Enter**. This command will download all the files in your GitHub repository into your vscode-projects folder.
+---
 
-1. In VS Code, select **File** > **Open Folder** again.
+## Methodology
+- Tools / libraries used (e.g., Python, pandas, matplotlib, scikit-learn)
+- Steps taken: data cleaning, feature engineering, modeling
+- Any assumptions or limitations
 
-1. This time, navigate to and select the folder for the project you just downloaded. Then, click **Select Folder**.
+---
 
-1. A virtual environment is necessary when working with Python projects to ensure each project's dependencies are kept separate from each other. You need to create your virtual environment, also called a venv, and then ensure that it is activated any time you return to your workspace.
-Click the gear icon in the lower left-hand corner of the screen to open the Manage menu and select **Command Palette** to open the VS Code command palette.
+## Analysis & Results
+- Key findings
+- Tables or summary statistics
+- Any models or metrics (if applicable)
 
-1. In the command palette, type: *create environment* and select **Python: Create Environment…**
+---
 
-1. Choose **Venv** from the dropdown list.
+## Visualizations
+- Important charts, graphs, or plots
+- Optionally include a screenshot or embed images
 
-1. Choose the Python version you installed earlier. Currently, we recommend Python 3.12.8
+---
 
-1. **DO NOT** click the box next to `requirements.txt`, as you need to do more steps before you can install your dependencies. Click **OK**.
+## Conclusions
+- Insights drawn from the analysis
+- How the results answer the problem statement
 
-1. You will see a `.venv` folder appear in the file explorer pane to show that the virtual environment has been created.
+---
 
-1. **Important**: Note that the `.venv` folder is in the `.gitignore` file so that Git won't track it.
+## Future Work
+- Ideas to improve or expand the project
+- Additional analyses, data sources, or models to explore
 
-1. Return to the terminal by clicking on the TERMINAL tab, or click on the **Terminal** menu and choose **New Terminal** if no terminal is currently open.
+---
 
-1. In the terminal, use the command below to install your dependencies. This may take several minutes.
+## Setup & Run
+**Requirements:**
+- Python version
+- Libraries (`pip install -r requirements.txt`)
 
- ```console
- pip3 install -r requirements.txt
- ```
-
-1. Open the `jupyter_notebooks` directory, and click on the notebook you want to open.
-
-1. Click the **kernel** button and choose **Python Environments**.
-
-Note that the kernel says `Python 3.12.8` as it inherits from the venv, so it will be Python-3.12.8 if that is what is installed on your PC. To confirm this, you can use the command below in a notebook code cell.
-
-```console
-! python --version
-```
-
-## Deployment Reminders
-
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version that closest matches what you used in this project.
-* The project can be deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. At the **Deploy** tab, select **GitHub** as the deployment method.
-3. Select your repository name and click **Search**. Once it is found, click **Connect**.
-4. Select the branch you want to deploy, then click **Deploy Branch**.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button **Open App** at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
+**Instructions:**
+```bash
+git clone <repo_url>
+cd project-folder
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+# Run notebooks or scripts
