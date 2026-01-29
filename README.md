@@ -18,7 +18,7 @@ Air Quality Comparator Project
 ---
 
 ## Project Overview
-Brief summary of the project, its purpose, and the main insights.
+Using data from Bristol and Birmingham, satellite data and ground data are compared in order to ascertain if there is sufficient correlation to infer ground levels from satellite data.
 
 ---
 
