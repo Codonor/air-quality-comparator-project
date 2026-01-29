@@ -107,3 +107,11 @@ python -m venv .venv
 .venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 # Run notebooks or scripts
+```
+---
+
+## Team / Contributors
+- Storm Harland
+- Mohammed Sarki
+- Conor O'Brien
+- Ben 
